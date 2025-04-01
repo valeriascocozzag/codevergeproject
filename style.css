@@ -1,25 +1,61 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+#inicio {
+  padding-top: 100px;
+}
+.navbar .nav-link {
+  font-weight: 500;
+  color: #1B1F3B;
+}
+.navbar .nav-link:hover {
+  color: #00D1FF;
+}
+.btn-primary {
+  background-color: #1B1F3B;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #00D1FF;
+  color: #fff;
+}
+.btn-light:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease-out;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: none;
+}
+.title-animate {
+  animation: bounceIn 1s ease-out forwards;
+}
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9) translateY(-30px);
   }
-  section {
-    padding-top: 80px;
-    padding-bottom: 80px;
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
   }
-  #inicio {
-    padding-top: 100px;
-  }
-  .navbar .nav-link {
-    font-weight: 500;
-    color: #1B1F3B;
-  }
-  .navbar .nav-link:hover {
-    color: #00D1FF;
-  }
-  .btn-primary {
-    background-color: #1B1F3B;
-    border: none;
-  }
-  .btn-primary:hover {
-    background-color: #00D1FF;
-    color: #fff;
-  }
+}
+#loader {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  z-index: 9999;
+  background-color: #1B1F3B;
+}
