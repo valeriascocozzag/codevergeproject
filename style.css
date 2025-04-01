@@ -1,0 +1,25 @@
+html {
+    scroll-behavior: smooth;
+  }
+  section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  #inicio {
+    padding-top: 100px;
+  }
+  .navbar .nav-link {
+    font-weight: 500;
+    color: #1B1F3B;
+  }
+  .navbar .nav-link:hover {
+    color: #00D1FF;
+  }
+  .btn-primary {
+    background-color: #1B1F3B;
+    border: none;
+  }
+  .btn-primary:hover {
+    background-color: #00D1FF;
+    color: #fff;
+  }
