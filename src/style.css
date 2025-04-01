@@ -2,7 +2,13 @@ html {
   scroll-behavior: smooth;
 }
 body {
+  opacity: 0;
+  animation: fadeInBody 1.2s ease-out forwards;
   font-family: 'Segoe UI', sans-serif;
+}
+@keyframes fadeInBody {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: none; }
 }
 section {
   padding-top: 80px;
@@ -13,7 +19,7 @@ section {
 }
 .navbar .nav-link {
   font-weight: 500;
-  color: #1B1F3B;
+  color: white;
 }
 .navbar .nav-link:hover {
   color: #00D1FF;
@@ -58,4 +64,15 @@ section {
   width: 100vw; height: 100vh;
   z-index: 9999;
   background-color: #1B1F3B;
+}
+
+.logo-bar {
+  position: sticky;
+  top: 0;
+  z-index: 1055;
+  background-color: #fff;
+}
+.logo-separado {
+  height: 100px;
+  max-height: 100px;
 }
