@@ -8,6 +8,12 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="style.css"/>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <style>
+    .emoji { font-size: 1.5rem; }
+    .icon { font-size: 2rem; color: #0d6efd; }
+    .section-bg { background: linear-gradient(to right, #e0f7fa, #e3f2fd); }
+    .highlight-card:hover { transform: translateY(-5px); transition: 0.3s; }
+  </style>
 </head>
 <body>
   <div class="logo-bar py-2 bg-white text-center shadow-sm">
@@ -32,35 +38,88 @@
   </nav>
 
   
+  <!-- Intro -->
+  <section class="pt-5 pb-5 mt-5 text-center section-bg fade-in">
+    <div class="container">
+      <h2 class="fw-bold mb-4 text-primary">✨ ¡Lo que podemos hacer por ti!</h2>
+      <p class="lead">Creamos experiencias digitales con alma, tecnología y propósito 💻💡</p>
+    </div>
+  </section>
+
+  <!-- Servicios principales -->
   <section class="py-5 text-center fade-in">
     <div class="container">
-      <h2 class="fw-bold mb-4">Nuestros Servicios</h2>
-      <p class="lead mb-5">Ofrecemos soluciones digitales adaptadas a cada necesidad. Desde una simple landing hasta un sistema completo.</p>
-      <div class="row">
-        <div class="col-md-4 mb-4">
-          <div class="card h-100 shadow text-center p-3">
-            <i class="bi bi-window fs-1 text-primary mb-3"></i>
-            <h5 class="card-title">Sitios Web</h5>
-            <p class="card-text">Diseñamos y desarrollamos sitios atractivos, rápidos y seguros.</p>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 p-4 shadow text-center highlight-card">
+            <i class="bi bi-brush icon mb-2"></i>
+            <h5 class="fw-bold">Diseño Web</h5>
+            <p>🎨 Interfaces modernas y adaptables que enamoran al usuario.</p>
           </div>
         </div>
-        <div class="col-md-4 mb-4">
-          <div class="card h-100 shadow text-center p-3">
-            <i class="bi bi-cart4 fs-1 text-primary mb-3"></i>
-            <h5 class="card-title">E-commerce</h5>
-            <p class="card-text">Tiendas virtuales 100% optimizadas y pensadas para convertir.</p>
+        <div class="col-md-4">
+          <div class="card h-100 p-4 shadow text-center highlight-card">
+            <i class="bi bi-code-slash icon mb-2"></i>
+            <h5 class="fw-bold">Desarrollo Web</h5>
+            <p>⚙️ Sitios a medida con tecnologías modernas y rendimiento top.</p>
           </div>
         </div>
-        <div class="col-md-4 mb-4">
-          <div class="card h-100 shadow text-center p-3">
-            <i class="bi bi-code-square fs-1 text-primary mb-3"></i>
-            <h5 class="card-title">Aplicaciones Web</h5>
-            <p class="card-text">Desarrollamos herramientas web personalizadas para tu negocio.</p>
+        <div class="col-md-4">
+          <div class="card h-100 p-4 shadow text-center highlight-card">
+            <i class="bi bi-cart-check icon mb-2"></i>
+            <h5 class="fw-bold">E-commerce</h5>
+            <p>🛒 Tiendas online potentes, rápidas y orientadas a conversiones.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- Diferenciales -->
+  <section class="py-5 bg-light text-center fade-in">
+    <div class="container">
+      <h2 class="fw-bold mb-4">🚀 Lo que nos hace únicos</h2>
+      <div class="row g-4">
+        <div class="col-md-3"><div class="card p-3 shadow h-100"><h6 class="fw-bold">Velocidad</h6><p>Entrega ágil sin sacrificar calidad.</p></div></div>
+        <div class="col-md-3"><div class="card p-3 shadow h-100"><h6 class="fw-bold">Creatividad</h6><p>Soluciones fuera de lo común que sorprenden.</p></div></div>
+        <div class="col-md-3"><div class="card p-3 shadow h-100"><h6 class="fw-bold">Cercanía</h6><p>Te escuchamos, te acompañamos y te entendemos.</p></div></div>
+        <div class="col-md-3"><div class="card p-3 shadow h-100"><h6 class="fw-bold">Escalabilidad</h6><p>Tu proyecto puede crecer con el tiempo sin rehacer todo.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proceso -->
+  <section class="py-5 section-bg text-center fade-in">
+    <div class="container">
+      <h2 class="fw-bold mb-4">🛠️ Nuestro proceso</h2>
+      <div class="row justify-content-center text-start">
+        <div class="col-md-8">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">📌 <strong>Kick-off:</strong> Nos conocemos, entendemos tu visión y necesidades.</li>
+            <li class="list-group-item">📐 <strong>Propuesta:</strong> Diseño de solución visual y técnica.</li>
+            <li class="list-group-item">💻 <strong>Desarrollo:</strong> Codificamos con pasión, siempre en contacto contigo.</li>
+            <li class="list-group-item">🚀 <strong>Lanzamiento:</strong> Subimos tu proyecto al mundo y te guiamos para gestionarlo.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA final -->
+  <section class="py-5 bg-dark text-white text-center fade-in">
+    <div class="container">
+      <h2 class="fw-bold mb-3">🎯 ¿Listo para crear algo increíble?</h2>
+      <p class="mb-4">No somos una agencia más. Somos tu equipo digital. 🤝</p>
+      <a href="contacto.html" class="btn btn-primary btn-lg">¡Hablemos!</a>
+    </div>
+  </section>
+  <!-- Footer -->
+ <footer class="bg-dark text-white text-center py-4">
+  <div class="container">
+    <p class="mb-1">© 2024 Scocode. Todos los derechos reservados.</p>
+    <small>Desarrollado con 💻 por Valeria Scocozza</small>
+  </div>
+</footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="script.js"></script>
